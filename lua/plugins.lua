@@ -20,12 +20,19 @@ local plugins = {
     "williamboman/mason-lspconfig.nvim", -- bypass between ↑ and ↓
     "williamboman/mason.nvim",  -- Mason for autoinstalling
     "rstacruz/vim-closer",      -- Autoclosing brackets
-    {
-    	"L3MON4D3/LuaSnip",
-	    version = "v2.*", 
-	    build = "make install_jsregexp"},
-    "",
-    
+    -- Snippets
+    {"L3MON4D3/LuaSnip",
+	 version = "v2.*",
+	 build = "make install_jsregexp"},
+    "saadparwaiz1/cmp_luasnip",
+    "hrsh7th/nvim-cmp",
+    "hrsh7th/cmp-buffer",
+    "hrsh7th/cmp-nvim-lsp",
+    -- Debug Analog Protocol
+    "mfussenegger/nvim-dap",
+    "rcarriga/nvim-dap-ui",
+    "jose-elias-alvarez/null-ls.nvim",
+    "onsails/lspkind.nvim"
 }
 
 require("lazy").setup(plugins)
