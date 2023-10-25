@@ -4,6 +4,7 @@ vim.opt.autoindent = smartindent
 vim.opt.clipboard = 'unnamedplus'   --copy to system buffer
 vim.opt.completeopt = {'menu', 'menuone', 'noselect'}
 vim.opt.mouse = 'a'
+vim.opt.syntax = 'on'
 
 -- Tabs:
 vim.opt.tabstop = 4  	    	-- visual spaces per TAB
