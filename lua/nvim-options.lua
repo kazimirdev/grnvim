@@ -1,4 +1,5 @@
 -- Base:
+vim.opt.encoding = 'UTF-8'
 vim.opt.swapfile = false
 vim.opt.autoindent = smartindent
 vim.opt.clipboard = 'unnamedplus'   --copy to system buffer
@@ -24,4 +25,7 @@ vim.opt.incsearch = true        -- search as characters are entered
 vim.opt.hlsearch = false        -- do not highlight matches
 vim.opt.ignorecase = true       -- ignore case in searches by default
 vim.opt.smartcase = true        -- but make it case sensitive if an uppercase is entered
+
+-- Keymaps
+vim.cmd.map("<Tab> :SidebarNvimToggle<CR>")
 

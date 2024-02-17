@@ -16,6 +16,8 @@ vim.opt.rtp:prepend(lazypath)
 
 -- List of plugins
 local plugins = {
+    "ryanoasis/vim-devicons", -- Icons
+    "sidebar-nvim/sidebar.nvim", -- SideBar
     "neovim/nvim-lspconfig",     -- LSP support by neovim
     "williamboman/mason-lspconfig.nvim", -- bypass between ↑ and ↓
     "williamboman/mason.nvim",  -- Mason for autoinstalling
