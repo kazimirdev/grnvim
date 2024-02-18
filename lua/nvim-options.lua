@@ -28,4 +28,3 @@ vim.opt.smartcase = true        -- but make it case sensitive if an uppercase is
 
 -- Keymaps
 vim.cmd.map("<Tab> :SidebarNvimToggle<CR>")
-
