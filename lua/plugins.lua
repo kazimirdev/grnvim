@@ -16,11 +16,11 @@ vim.opt.rtp:prepend(lazypath)
 
 -- List of plugins
 local plugins = {
-    "ryanoasis/vim-devicons", -- Icons
-    "sidebar-nvim/sidebar.nvim", -- SideBar
     "neovim/nvim-lspconfig",     -- LSP support by neovim
     "williamboman/mason-lspconfig.nvim", -- bypass between ↑ and ↓
     "williamboman/mason.nvim",  -- Mason for autoinstalling
+    "ryanoasis/vim-devicons", -- Icons
+    "sidebar-nvim/sidebar.nvim", -- SideBar
     "rstacruz/vim-closer",      -- Autoclosing brackets
     -- Snippets
     {"L3MON4D3/LuaSnip",
@@ -34,7 +34,12 @@ local plugins = {
     "mfussenegger/nvim-dap",
     "rcarriga/nvim-dap-ui",
     "jose-elias-alvarez/null-ls.nvim",
-    "onsails/lspkind.nvim"
+    "onsails/lspkind.nvim",
+    {'nvim-telescope/telescope.nvim', tag = '0.1.5',
+-- or                              , branch = '0.1.x',
+      dependencies = { 'nvim-lua/plenary.nvim',
+                       'nvim-treesitter/nvim-treesitter'}
+    },
 }
 
 require("lazy").setup(plugins)

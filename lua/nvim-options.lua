@@ -27,4 +27,15 @@ vim.opt.ignorecase = true       -- ignore case in searches by default
 vim.opt.smartcase = true        -- but make it case sensitive if an uppercase is entered
 
 -- Keymaps
-vim.cmd.map("<Tab> :SidebarNvimToggle<CR>")
+vim.cmd.map("<Tab> :SidebarNvimFocus<CR>")
+
+-- Tabnew SSH
+vim.cmd([[
+  command! -nargs=1 SSHConnect lua ConnectToSSH(<f-args>)
+]])
+
+function ConnectToSSH(host)
+  local cmd = 'ssh ' .. host
+  vim.cmd('vs')
+  vim.cmd('terminal ' .. cmd)
+end

@@ -5,3 +5,5 @@ require('snippets')
 -- require('linter')
 require('themes')
 require('sidebar')
+require('telescope')
+
